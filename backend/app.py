@@ -3,7 +3,7 @@ from flask_cors import CORS
 import numpy as np
 from backend.mmr_power import powfun
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend/static', template_folder='../frontend')
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/calculate_power', methods=['POST'])
