@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.book {
+    text-decoration: none;
+    color: black;
+}
+
+#powerAnalysisForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 18px;
+}
+
+.form-group.select {
+    margin-bottom: 15px;
+    margin-right: 0px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: center;
+    background-size: 8px 8px;
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.form-group select option {
+    padding: 8px;
+}
+
+.form-group input[type="number"],
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calculate-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.calculate-button:hover {
+    background-color: #45a049;
+}
+
+.reset-button {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #e53935;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+#inputValues,
+#table-title,
+#result-title,
+#result,
+.reset-button {
+    display: none;
+}
+
+.editable {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.editable:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 840px) {
+    body {
+        margin: 10px;
+    }
+
+    #powerAnalysisForm {
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-spacing: 0;
+    }
+
+    th,
+    td {
+        display: block;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .form-group input {
+        padding: 6px;
+    }
+}
+
+.result-table th,
+.result-table td {
+    border-color: black;
+    background-color: transparent;
+    text-align: left;
+}
+
+.result-table .with-decimals {
+    text-align: left;
+}
+
+.result-table th.header-top {
+    vertical-align: top;
+}
+
+.result-table th.header-bottom {
+    vertical-align: bottom;
+}
+
+.result-table th.header-center {
+    text-align: center;
+}
+
+.result-table td.subheader {
+    text-align: center;
+}
+
+*:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
