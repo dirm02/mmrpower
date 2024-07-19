@@ -194,7 +194,7 @@ function calculatePower() {
         TruncProp
     };
 
-    fetch('http://127.0.0.1:5000/calculate_power', {
+    fetch('https://mmrpower-cb02959ddde8.herokuapp.com/calculate_power', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
