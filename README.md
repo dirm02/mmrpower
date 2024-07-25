@@ -47,3 +47,16 @@ This project estimates the statistical power for detecting moderating effects of
 5. Click "Calculate Power" to get the power analysis results.
 
 6. Click "Reset" to clear the form.
+
+## Deploy
+I deployed this app using Heroku.
+* After completing the project, push the project to heroku:
+```sh
+git push heroku main
+```
+* Open the deployed app:
+```sh
+heroku open
+```
+
+You can see the web application in [https://mmrpower-cb02959ddde8.herokuapp.com/].
